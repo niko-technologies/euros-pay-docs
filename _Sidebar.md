@@ -1,4 +1,0 @@
-* Home
-* Authorization
-* Transactions
-* * Widget
