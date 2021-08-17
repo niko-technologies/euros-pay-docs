@@ -1,0 +1,1 @@
+* [Widget](https://github.com/niko-technologies/payment-gateway-docs/wiki/widget-transactions)
