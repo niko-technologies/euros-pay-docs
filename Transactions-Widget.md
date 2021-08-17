@@ -43,6 +43,7 @@ Response
 
 ```json
 {
+  "id": "00000000-0000-0000-0000-000000000000",
   "url": "https://payment.widget/link"
 }
 ```
