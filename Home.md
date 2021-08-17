@@ -1,6 +1,6 @@
 # Payment Gateway
 
-[[https://niko-tech.eu/assets/icons/header/logo.svg|Niko Technologies]]
+[[https://github.com/niko-technologies/payment-gateway-docs/blob/main/logo.png|Niko Technologies]]
 
 Niko Technologies payment gateway docs
 
