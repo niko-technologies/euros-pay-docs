@@ -35,7 +35,6 @@ Content-type: application/json
   "amount": 10,
   "currencyCode": "EUR",
   "orderId": "c757d923-5deb-4774-80fe-162a19293c2e",
-  "customerIp": "8.8.8.8",
   "redirectUrl": "https://some-partner.securepaycard.com/redirect",
   "confirmationUrl": "https://some-partner.securepaycard.com/confirm"
 }
@@ -60,7 +59,6 @@ const data = {
   amount: 10,
   currencyCode: 'EUR',
   orderId: 'c757d923-5deb-4774-80fe-162a19293c2e',
-  customerIp: '8.8.8.8',
   redirectUrl: 'https://some-partner.securepaycard.com/redirect',
   confirmationUrl: 'https://some-partner.securepaycard.com/confirm'
 }
@@ -69,5 +67,5 @@ const signature = createHmac('sha256', secretKey)
   .update(JSON.stringify(data), 'utf8')
   .digest('base64')
 
-console.log(signature); // T8+GRqKcOi2sgDdSWn2x1TGIHDigyFI034QvXvS8GEs=
+console.log(signature); // 6nMyYkUf91GCcBUz+sQ0iJ5GZFaYcRJuXF89KzoJw8c=
 ```
