@@ -4,8 +4,8 @@
 
 | Param           | Description                                                                                                                                           | Type   | Required |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------: |
-| client          | Client data to connect transaction                                                                                                                    | Client |        ✔️ |
-| client.phone    | Client phone is used as main identifier                                                                                                               | string |        ✔️ |
+| client          | Client data to connect transaction                                                                                                                    | Client |        ❌ |
+| client.phone    | Client phone is used as main identifier                                                                                                               | string |        ❌ |
 | client.email    | Client email is used as secondary identifier and could be omitted                                                                                     | string |        ❌ |
 | amount          | Transaction amount                                                                                                                                    | number |        ✔️ |
 | currencyCode    | Transaction currency code, should be one of available currencies for your account                                                                     | string |        ✔️ |
@@ -13,7 +13,7 @@
 | redirectUrl     | URL to which client will be returned after successful or pending transaction                                                                          | string |        ✔️ |
 | failRedirectUrl | URL to which client will be returned if transaction fails and it is known at the redirect moment                                                      | string |        ❌ |
 | confirmationUrl | URL to which webhook with transaction data will be sent. Should be some API handler to perform actions, depends on transaction status or other params | string |        ✔️ |
-| data            | Any data in JSON string format, will be added to confirmation body, when the webhook is triggered                                                     | string |        ✔️ |
+| data            | Any data in JSON string format, will be added to confirmation body, when the webhook is triggered                                                     | string |        ❌ |
 
 Request:
 
