@@ -10,3 +10,4 @@ Table of contents
 * Transactions
   * [Widget](Transactions-Widget)
   * [Webhooks](Transactions-Webhooks)
+  * [P2P](Transactions-P2P)
