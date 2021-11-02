@@ -13,7 +13,6 @@ Request:
 GET /forward-p2p/allowed-inputs?amount=1000&currencyCode=RUB
 
 Authorization: Bearer {{YOUR_PUBLIC_KEY}}
-Content-type: application/json
 ```
 
 Response
