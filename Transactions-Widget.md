@@ -4,6 +4,7 @@
 
 | Param            | Description                                                                                                                                           | Type   | Required |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------: |
+| type             | Transaction type. `payment` used by default. Possible values are: `payment`, `forward-p2p`.                                                           | string |        ❌ |
 | client           | Client data to connect transaction                                                                                                                    | Client |        ❌ |
 | client.phone     | Client phone is used as main identifier                                                                                                               | string |        ❌ |
 | client.email     | Client email is used as secondary identifier and could be omitted                                                                                     | string |        ❌ |
@@ -14,7 +15,7 @@
 | failRedirectUrl  | URL to which client will be returned if transaction fails and it is known at the redirect moment                                                      | string |        ❌ |
 | confirmationUrl  | URL to which webhook with transaction data will be sent. Should be some API handler to perform actions, depends on transaction status or other params | string |        ✔️ |
 | data             | Any data in JSON string format, will be added to confirmation body, when the webhook is triggered                                                     | string |        ❌ |
-| p2pDestinationId | ID of P2P allowed input, retrieved using /forward-p2p/allowed-inputs                                                                                  | string |        ❌ |
+| p2pDestinationId | ID of P2P allowed input, retrieved using /forward-p2p/allowed-inputs. Should be used with type: `forward-p2p`                                         | string |        ❌ |
 
 Request:
 
