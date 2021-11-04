@@ -53,7 +53,7 @@ Destinations from registry will be available in [allowed inputs request](#get-al
 Request:
 
 ```http
-POST {{host}}/forward-p2p/destination
+POST /forward-p2p/destination
 Authorization: Bearer {{YOUR_PUBLIC_KEY}}
 X-Signature: UV4p5IbaIvox2KJWKctocTvRxM/7WkepE63Aabr0BZ8=
 content-type: application/json
