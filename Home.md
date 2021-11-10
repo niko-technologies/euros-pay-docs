@@ -11,3 +11,4 @@ Table of contents
   * [Widget](Transactions-Widget)
   * [Webhooks](Transactions-Webhooks)
   * [P2P](Transactions-P2P)
+* [Enums](Enums)
