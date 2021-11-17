@@ -47,3 +47,12 @@ Response
   "url": "https://payment.widget/link"
 }
 ```
+
+## Test cards
+
+If you are using sandbox environment and building your integration use cards specified below to set specific status to the transaction.
+
+| Card             | Status  |
+| ---------------- | ------- |
+| 4111111111111111 | success |
+| 4242424242424242 | failed  |
