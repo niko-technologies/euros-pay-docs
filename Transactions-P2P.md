@@ -15,7 +15,7 @@ GET /forward-p2p/allowed-inputs?amount=1000&currencyCode=RUB
 Authorization: Bearer {{YOUR_PUBLIC_KEY}}
 ```
 
-Response
+Response:
 
 ```json
 {
@@ -53,7 +53,7 @@ Destinations from registry will be available in [allowed inputs request](#get-al
 Request:
 
 ```http
-POST /forward-p2p/destination
+POST /forward-p2p/destinations
 Authorization: Bearer {{YOUR_PUBLIC_KEY}}
 X-Signature: UV4p5IbaIvox2KJWKctocTvRxM/7WkepE63Aabr0BZ8=
 content-type: application/json
@@ -61,11 +61,12 @@ content-type: application/json
 {
   "account": "4111111111111111",
   "amount": 1021,
-  "currencyCode": "RUB"
+  "currencyCode": "RUB",
+  "referenceId": "12345"
 }
 ```
 
-Response
+Response:
 
 ```json
 {
@@ -73,7 +74,47 @@ Response
   "currencyCode": "RUB",
   "account": "4111111111111111",
   "fee": 1,
-  "referenceId": null,
+  "referenceId": "12345",
+  "confirmationUrl": null,
+  "lockedUntil": null,
+  "id": "f3d6563d-5c3f-41c6-87e5-76cd83727c24",
+  "status": "initial",
+  "createdAt": "2021-11-04T15:35:15.522Z",
+  "updatedAt": "2021-11-04T15:35:15.522Z"
+}
+```
+
+## Get destination
+
+There are 2 ways of retrieving data about destination. 
+
+### Get by ID
+
+Request:
+
+```http
+GET /forward-p2p/destinations/f3d6563d-5c3f-41c6-87e5-76cd83727c24
+Authorization: Bearer {{YOUR_PUBLIC_KEY}}
+```
+
+### Get by reference ID
+
+Request:
+
+```http
+GET /forward-p2p/destinations?referenceId=12345
+Authorization: Bearer {{YOUR_PUBLIC_KEY}}
+```
+
+Response:
+
+```json
+{
+  "amount": 1021,
+  "currencyCode": "RUB",
+  "account": "4111111111111111",
+  "fee": 1,
+  "referenceId": "12345",
   "confirmationUrl": null,
   "lockedUntil": null,
   "id": "f3d6563d-5c3f-41c6-87e5-76cd83727c24",

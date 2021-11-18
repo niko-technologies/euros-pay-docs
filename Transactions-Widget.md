@@ -39,7 +39,7 @@ Content-type: application/json
 }
 ```
 
-Response
+Response:
 
 ```json
 {
