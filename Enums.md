@@ -29,13 +29,13 @@ Define the status of merchant service webhook handling about transaction.
 
 ## P2P Destination statuses
 
-| Status   | Description                                                                                                             |
-| -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| initial  | Default status for newly created destination.                                                                           |
-| declined | Defines that definition was declined and no longer available for matching.                                              |
-| used     | Definition is used and waiting to be paid or failed.                                                                    |
-| paid     | Marks definition as paid.                                                                                               |
-| failed   | Marks that transaction is failed. Definition will be returned to the initial status to be available for matching again. |
+| Status   | Description                                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------------------------------ |
+| initial  | Default status for newly created destination.                                                                            |
+| declined | Defines that destination was declined and no longer available for matching.                                              |
+| used     | Destination is used and waiting to be paid or failed.                                                                    |
+| paid     | Marks destination as paid.                                                                                               |
+| failed   | Marks that transaction is failed. Destination will be returned to the initial status to be available for matching again. |
 
 ## Response statuses
 
