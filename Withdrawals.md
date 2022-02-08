@@ -66,6 +66,7 @@ Content-Type: application/json
     "cardNumber": "4111111111111111"
   },
   "rejectReason": null,
+  "updatedAt": "2022-02-04T15:13:15.811Z",
   "createdAt": "2022-02-04T15:13:01.027Z"
 }
 ```
@@ -94,7 +95,7 @@ Content-type: application/json
   "currencyCode":"UAH",
   "type":"auto-card",
   "requisites": {
-    "cardNumber":"4111111111111111"
+    "cardNumber":"4111111111111111",
   }
 }
 ```
