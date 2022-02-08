@@ -39,10 +39,26 @@ Define the status of merchant service webhook handling about transaction.
 
 ## Response statuses
 
-| HTTP Status | Description                                                                                                                                     |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| 200, 201    | Successful response                                                                                                                             |
-| 400         | Failed request. Contains either invalid or wrong data that cannot be processed. Details are provided in response body.                          |
-| 401         | Authorization error. Could be as a result of invalid or inactive auth token provided or wrong signature. Details are provided in response body. |
-| 403         | Forbidden action requested.                                                                                                                     |
-| 500         | Something occasionally went wrong during request processing                                                                                     |
+| HTTP Status | Description  
+ default:
+| 200, 201 | Successful response |
+| 400 | Failed request. Contains either invalid or wrong data that cannot be processed. Details are provided in response body. |
+| 401 | Authorization error. Could be as a result of invalid or inactive auth token provided or wrong signature. Details are provided in response body. |
+| 403 | Forbidden action requested. |
+| 500 | Something occasionally went wrong during request processing |
+
+## Withdrawal types
+
+| Type      | Description                  |
+| --------- | ---------------------------- |
+| auto-card | Automatic withdrawal to card |
+
+## Withdrawal statuses
+
+| Status     | Description                               |
+| ---------- | ----------------------------------------- |
+| initial    | Initial status of withdrawal              |
+| rejected   | Withdrawal rejected by securepaycard      |
+| processing | Withdrawal in process                     |
+| failed     | Withdrawal failed by third party provider |
+| success    | Withdrawal successful processed           |

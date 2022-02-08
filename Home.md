@@ -9,7 +9,9 @@ Table of contents
 * [Authorization](Authorization)
 * Transactions
   * [Widget](Transactions-Widget)
+  * [Info](Transactions-Info)
   * [Webhooks](Transactions-Webhooks)
   * [P2P](Transactions-P2P)
+* [Withdrawals](Withdrawals.md)
 * [Common](Common)
 * [Enums](Enums)
