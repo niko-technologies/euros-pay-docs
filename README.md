@@ -1,1 +1,1 @@
-* [Documentation](https://github.com/niko-technologies/payment-gateway-docs/wiki)
+* [Documentation](https://github.com/niko-technologies/euros-pay-docs/wiki)
